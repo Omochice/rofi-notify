@@ -22,10 +22,11 @@
   white: #ffffff;
   brightblack: #575656;
 
-  background-color: @Background;
+  background-color: @background;
 }
 
 #window {
+  background-color: @background;
   location: center;
   width: 20%;
   height: 20%;
@@ -40,18 +41,18 @@
 
 #textbox-how-to-escape {
   str: "Esc / Enter to exit";
-  text-color: @Comment;
+  text-color: @comment;
   vertical-align: 1;
 }
 
 #listview {
   border: 0px 0px 0px;
-  border-color: @CurrentLine;
+  border-color: @currentline;
   padding: 0px 0px 5px 0px;
 }
 
 #element {
   border: 0;
   padding: 3px 10px 3px 10px;
-  text-color: @Foreground;
+  text-color: @foreground;
 }
