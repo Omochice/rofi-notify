@@ -1,0 +1,57 @@
+* {
+  highlight: bold italic;
+
+  /* night owl color palette  */
+  /* from https://github.com/sdras/night-owl-vscode-theme/issues/70 */
+  background: #011627;
+  foreground: #d6deeb;
+  currentline: #01111d;
+  cursorselection: #1d3b53;
+  currentline: #80a4c2;
+  linenumber: #4b6479;
+  currentlinenumber: #c5e4fd;
+  tagskeywords: #7fdbca;
+  comment: #637777;
+  red: #ef5350;
+  green: #22da6e;
+  yellow: #addb67;
+  blue: #82aaff;
+  orange: #f78c6c;
+  magenta: #c792ea;
+  cyan: #21c7a8;
+  white: #ffffff;
+  brightblack: #575656;
+
+  background-color: @Background;
+}
+
+#window {
+  location: center;
+  width: 20%;
+  height: 20%;
+  children: [mainbox];
+}
+
+#mainbox {
+  border: 0;
+  orientation: vertical;
+  children: [ listview, textbox-how-to-escape ];
+}
+
+#textbox-how-to-escape {
+  str: "Esc / Enter to exit";
+  text-color: @Comment;
+  vertical-align: 1;
+}
+
+#listview {
+  border: 0px 0px 0px;
+  border-color: @CurrentLine;
+  padding: 0px 0px 5px 0px;
+}
+
+#element {
+  border: 0;
+  padding: 3px 10px 3px 10px;
+  text-color: @Foreground;
+}
